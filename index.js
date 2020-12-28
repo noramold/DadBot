@@ -22,7 +22,7 @@ config({
 
 client.on("ready", () => {
     console.log(`${client.user.username} is now online!`);
-    client.user.setActivity(`${prefix}`, { type: "PLAYING" });
+    client.user.setActivity("dad jokes", { type: "PLAYING" });
 })
 
 client.on("message", async message => {
