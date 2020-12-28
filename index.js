@@ -22,14 +22,14 @@ config({
 
 client.on("ready", () => {
     console.log(`${client.user.username} is now online!`);
-    client.user.setActivity(`${prefix}`+"help", { type: "PLAYING" });
+    client.user.setActivity(`${prefix}`, { type: "PLAYING" });
 })
 
 client.on("message", async message => {
 
     if (message.author.bot) return;
-    if (!message.guild) return;
-    if (!message.content.startsWith(prefix)) return;
+    // if (!message.guild) return;
+    // if (!message.content.startsWith(prefix)) return;
 
     // If message.member is uncached, cache it.
     if (!message.member) message.member = await message.guild.fetchMember(message);
@@ -37,14 +37,17 @@ client.on("message", async message => {
     const args = message.content.slice(prefix.length).trim().split(/ +/g);
     const cmd = args.shift().toLowerCase();
     
-    if (cmd.length === 0) return;
+    // if (cmd.length === 0) return;
     let mention = message.mentions.users.first();
 
-    // Get the command
-    let command = client.commands.get(cmd);
 
-    if (command) 
-        command.run(client, message, args,mention);
+    
+    if(cmd)
+    {
+        console.log("I give up");
+        let sendt = message.content;
+        message.channel.send("Hi " + sendt.replace("I'm","") + "  I'm dad\n"); 
+    }
 });
 
-client.login(process.env.TOKEN);
+client.login(process.env.BOT_TOKEN);
