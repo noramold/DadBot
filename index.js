@@ -43,17 +43,8 @@ client.on("message", async message => {
     // Get the command
     let command = client.commands.get(cmd);
 
-    if (!command)
-    {
-        command = client.commands.get(client.aliases.get(cmd));
-        var embed = new Discord.MessageEmbed()
-            .setTitle("Wrong command! To see all the commands:  " + `*${prefix}`  + "help*")
-            .setColor("#000000")
-        message.channel.send(embed)
-    }
-
     if (command) 
         command.run(client, message, args,mention);
 });
 
-client.login(process.env.BOT_TOKEN);
+client.login(process.env.TOKEN);
