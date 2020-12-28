@@ -30,13 +30,17 @@ client.on("message", async message => {
     if (message.author.bot) return;
     if (!message.guild) return;
     let sendt = message.content;
-    let word = "I'm";
+    let word = "i'm";
     // if (sendt.includes(word))
     if (message.content.startsWith(word))
     {
+        var embed = new Discord.MessageEmbed()
+                .setDescription("Hi " + sendt.replace(word,"") + ", I'm dad\n")
+                .setColor("#000000")
+                // .setFooter("Dad")
+        message.channel.send(embed);
         // let more = message.content;
-        message.channel.send("Hi " + sendt.replace("I'm","") + ", I'm dad\n"); 
-        // message.channel.send("something else");
+        // message.channel.send("Hi " + sendt.replace("I'm","") + ", I'm dad\n"); 
     }
 
 
