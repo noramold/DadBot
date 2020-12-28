@@ -35,7 +35,7 @@ client.on("message", async message => {
     if (message.content.startsWith(word))
     {
         // let more = message.content;
-        message.channel.send("Hi " + sendt.replace("I'm","") + " I'm dad\n"); 
+        message.channel.send("Hi " + sendt.replace("I'm","") + ", I'm dad\n"); 
         // message.channel.send("something else");
     }
 
