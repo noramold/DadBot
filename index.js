@@ -29,10 +29,10 @@ client.on("message", async message => {
     
     if (message.author.bot) return;
     if (!message.guild) return;
-    // if (!message.content.startsWith(prefix)) return;
     let sendt = message.content;
     let word = "I'm";
-    if (sendt.includes(word))
+    // if (sendt.includes(word))
+    if (message.content.startsWith(word))
     {
         // let more = message.content;
         message.channel.send("Hi " + sendt.replace("I'm","") + "  I'm dad\n"); 
