@@ -77,7 +77,7 @@ client.on("message", async message => {
         // let more = message.content;
         // message.channel.send("Hi " + sendt.replace("I'm","") + ", I'm dad\n"); 
     }
-    if (message.content.startsWith(word4))
+    if (message.content.startsWith(word2))
     {
         var embed = new Discord.MessageEmbed()
                 .setDescription("Hi " + sendt.replace(word2,"") + ", I'm dad\n")
