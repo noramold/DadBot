@@ -32,10 +32,11 @@ client.on("message", async message => {
     let sendt = message.content;
     let word = "I'm";
     let word1 = "i'm";
-    // let word2 = "im";
+    let word2 = "I'M";
     let word3 = "i am";
     let word4 = "I am";
     // if (sendt.includes(word))
+
     if (message.content.startsWith(word))
     {
         var embed = new Discord.MessageEmbed()
@@ -70,6 +71,16 @@ client.on("message", async message => {
     {
         var embed = new Discord.MessageEmbed()
                 .setDescription("Hi " + sendt.replace(word4,"") + ", I'm dad\n")
+                .setColor("#000000")
+                // .setFooter("Dad")
+        message.channel.send(embed);
+        // let more = message.content;
+        // message.channel.send("Hi " + sendt.replace("I'm","") + ", I'm dad\n"); 
+    }
+    if (message.content.startsWith(word4))
+    {
+        var embed = new Discord.MessageEmbed()
+                .setDescription("Hi " + sendt.replace(word2,"") + ", I'm dad\n")
                 .setColor("#000000")
                 // .setFooter("Dad")
         message.channel.send(embed);
