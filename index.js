@@ -130,7 +130,7 @@ client.on("message", async message => {
     if (message.content.startsWith(word8))
     {
         var embed = new Discord.MessageEmbed()
-                .setDescription("Hei " + sendt.replace(word8,"") + ", æ e pappa\n")
+                .setDescription("Heia " + sendt.replace(word8,"") + ", æ e pappa\n")
                 .setColor("#000000")
                 // .setFooter("Dad")
         message.channel.send(embed);
