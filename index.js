@@ -95,7 +95,7 @@ client.on("message", async message => {
     if (message.content.startsWith(word5))
     {
         var embed = new Discord.MessageEmbed()
-        .setDescription("Heia " + sendt.replace(word5,"") + ", Æ e pappa\n")
+        .setDescription("Heia " + sendt.replace(word5,"") + ", æ e pappa\n")
         .setColor("#000000")
         // .setFooter("Dad")
         message.channel.send(embed);
@@ -106,7 +106,7 @@ client.on("message", async message => {
     if (message.content.startsWith(word6))
     {
         var embed = new Discord.MessageEmbed()
-        .setDescription("Hei " + sendt.replace(word6,"") + ", Eg er pappa\n")
+        .setDescription("Hei " + sendt.replace(word6,"") + ", eg er pappa\n")
         .setColor("#000000")
         // .setFooter("Dad")
         message.channel.send(embed);
@@ -116,7 +116,7 @@ client.on("message", async message => {
     if (message.content.startsWith(word7))
     {
         var embed = new Discord.MessageEmbed()
-                .setDescription("Hei " + sendt.replace(word7,"") + ", Jeg er pappa\n")
+                .setDescription("Hei " + sendt.replace(word7,"") + ", jeg er pappa\n")
                 .setColor("#000000")
                 // .setFooter("Dad")
         message.channel.send(embed);
