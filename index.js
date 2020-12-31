@@ -36,8 +36,11 @@ client.on("message", async message => {
     let word3 = "i am";
     let word4 = "I am";
     let word5 = "æ e ";
-    let word6 = "eg er";
+    let word6 = "eg e";
     let word7 = "jeg er";
+    let word8 = "Æ e";
+    let word9 = "Eg e";
+    let word10 = "Jeg er";
     // if (sendt.includes(word))
 
     if (message.content.startsWith(word))
@@ -117,6 +120,39 @@ client.on("message", async message => {
     {
         var embed = new Discord.MessageEmbed()
                 .setDescription("Hei " + sendt.replace(word7,"") + ", jeg er pappa\n")
+                .setColor("#000000")
+                // .setFooter("Dad")
+        message.channel.send(embed);
+        // let more = message.content;
+        // message.channel.send("Hi " + sendt.replace("I'm","") + ", I'm dad\n"); 
+    }
+    
+    if (message.content.startsWith(word8))
+    {
+        var embed = new Discord.MessageEmbed()
+                .setDescription("Hei " + sendt.replace(word8,"") + ", æ e pappa\n")
+                .setColor("#000000")
+                // .setFooter("Dad")
+        message.channel.send(embed);
+        // let more = message.content;
+        // message.channel.send("Hi " + sendt.replace("I'm","") + ", I'm dad\n"); 
+    }
+    
+    if (message.content.startsWith(word9))
+    {
+        var embed = new Discord.MessageEmbed()
+                .setDescription("Hei " + sendt.replace(word9,"") + ", eg e pappa\n")
+                .setColor("#000000")
+                // .setFooter("Dad")
+        message.channel.send(embed);
+        // let more = message.content;
+        // message.channel.send("Hi " + sendt.replace("I'm","") + ", I'm dad\n"); 
+    }
+    
+    if (message.content.startsWith(word10))
+    {
+        var embed = new Discord.MessageEmbed()
+                .setDescription("Hei " + sendt.replace(word10,"") + ", jeg er pappa\n")
                 .setColor("#000000")
                 // .setFooter("Dad")
         message.channel.send(embed);
