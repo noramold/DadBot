@@ -8,9 +8,9 @@ module.exports =
     description: 'dad jokes text ',
     run: async(client,message,args) =>
     {
-        var affir = Math.floor(Math.random()*(affirmations.length));
+        var affir = Math.floor(Math.random()*(dad.length));
         var embed = new Discord.MessageEmbed()
-                .setTitle(affirmations[affir])
+                .setTitle(dad[affir])
                 .setColor("#000000")
         message.channel.send(embed);
     }
