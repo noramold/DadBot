@@ -20,7 +20,7 @@ module.exports =
 }
 const help = 
 `
-•***${prefix}dadjokes *new/top/hot***
+•***${prefix}dadjoke *new/top/hot***
 •***${prefix}dadtext***
 `
 
