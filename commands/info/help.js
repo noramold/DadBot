@@ -11,9 +11,9 @@ module.exports =
     {
         var embed = new Discord.MessageEmbed()
             .setTitle("Commands")
-            .setAuthor("The Wilds Bot")
+            .setAuthor("Dad Bot")
             .setDescription(help)
-            .setThumbnail("https://tvline.com/wp-content/uploads/2020/11/the-wilds-poster-amazon.jpg?w=449")
+            .setThumbnail("https://c8.alamy.com/comp/PHG588/look-at-me-i-am-cool-dad-portrait-of-handsome-adult-bearded-male-in-trendy-sunglasses-and-denim-jacket-pointing-at-himself-and-smiling-broadly-introducing-to-people-on-disco-party-over-grey-wall-PHG588.jpg")
             .setColor("#414084")
         message.channel.send(embed);
     }
