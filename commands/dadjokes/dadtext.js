@@ -9,13 +9,23 @@ module.exports =
     run: async(client,message,args) =>
     {
         var affir = Math.floor(Math.random()*(dad.length));
+        var wa = Math.floor(Math.random()*(dad.length));
         var embed = new Discord.MessageEmbed()
                 .setTitle(dad[affir])
+                .setAuthor(words[wa])
                 .setColor("#000000")
         message.channel.send(embed);
     }
 }
 
+var words = 
+[
+    "dad", 
+    "daddio", 
+    "papa", 
+    "pappa", 
+    "father"
+]
 var dad = [
 "'Dad, did you get a haircut?' 'No, I got them all cut!'",      
 "My wife is really mad at the fact that I have no sense of direction. So I packed up my stuff and right!",

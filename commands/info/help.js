@@ -21,7 +21,7 @@ module.exports =
 const help = 
 `
 •***${prefix}dadjoke *new/top/hot***
-•***${prefix}dadtext***
+•***${prefix}dadtext random dadjokes***
 `
 
 //asd
