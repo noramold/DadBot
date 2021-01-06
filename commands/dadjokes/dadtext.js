@@ -9,9 +9,9 @@ module.exports =
     run: async(client,message,args) =>
     {
         var affir = Math.floor(Math.random()*(dad.length));
-        var wa = Math.floor(Math.random()*(dad.length));
+        var wa = Math.floor(Math.random()*(words.length));
         var embed = new Discord.MessageEmbed()
-                .setTitle(dad[affir])
+                .setDescription(dad[affir])
                 .setAuthor(`${words[wa]}`)
                 .setColor("#000000")
         message.channel.send(embed);
