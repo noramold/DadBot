@@ -20,8 +20,8 @@ module.exports =
 }
 const help = 
 `
-•***${prefix}dadjoke *new/top/hot***
-•***${prefix}dadtext random dadjokes***
+•***${prefix}dadjoke *new/top/hot*** top dadjokes from reddit
+•***${prefix}dadtext*** random dadjokes
 `
 
 //asd
