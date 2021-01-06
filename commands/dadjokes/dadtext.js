@@ -12,7 +12,7 @@ module.exports =
         var wa = Math.floor(Math.random()*(dad.length));
         var embed = new Discord.MessageEmbed()
                 .setTitle(dad[affir])
-                .setAuthor(words[wa])
+                .setAuthor(`${words[wa]}`)
                 .setColor("#000000")
         message.channel.send(embed);
     }
