@@ -134,17 +134,36 @@ client.on("message", async message => {
 
     if (message.content.startsWith(du))
     {
-        message.inlineReply("Hallo  " + sendt.replace(du,"") + ", ik ben papa\n");
+        message.inlineReply("Hallo " + sendt.replace(du,"") + ", ik ben papa\n");
     }
-    if (message.content.startsWith(nor6))
+    if (message.content.startsWith(du1)
     {
-        message.inlineReply("Hallootjes  " + sendt.replace(du,"") + ", ik ben papa\n");
+        message.inlineReply("Hallootjes " + sendt.replace(du1,"") + ", ik ben papa\n");
     }
+    /* 
+    * -----------------------------------------------------
+    * --------------------- Spanish -----------------------
+    * -----------------------------------------------------
+    */
+    let es  = estoy;
+    let es1 = Estoy;
+
+    if (message.content.startsWith(es))
+    {
+        message.inlineReply("Hola " + sendt.replace(es,"") + ", yo soy papá \n");
+    }
+    if (message.content.startsWith(es1))
+    {
+        message.inlineReply("Hola " + sendt.replace(es1,"") + ", yo soy papá\n");
+    }
+
     /* 
     * -----------------------------------------------------
     * -----------------------------------------------------
     * -----------------------------------------------------
     */
+
+    
 
      // if (message.author.bot) return;
     // if (!message.guild) return;
