@@ -7,6 +7,7 @@ module.exports =
     description: 'memes basically',
     run: async(client,message,args) =>
     {
+        var count = 0;
         // var embed = new Discord.MessageEmbed()
 
         if(args[0].toLowerCase() == "new")
@@ -26,6 +27,8 @@ module.exports =
                 // .setDescription("A meme for you")
                 message.channel.send(`${post.url}`);
             });
+
+            count++;
         }
         if(args[0].toLowerCase() == "hot")
         {
@@ -44,6 +47,8 @@ module.exports =
                 // .setDescription("A meme for you")
                 message.channel.send(`${post.url}`);
             });
+            count++;
+
         }
         if(args[0].toLowerCase() == "top")
         {
@@ -62,8 +67,18 @@ module.exports =
                 // .setDescription("A meme for you")
                 message.channel.send(`${post.url}`);
             });
+            count++;
         }
         
-    
+        if(args[0].toLowerCase === "stats")
+        {
+
+            console.log("wtf");
+            var embed = new Discord.MessageEmbed()
+            // .setDescription("Bot has been used " + count + "times")
+            .setDescription("I work")
+            .setColor("#000000")
+            message.channel.send(embed);
+        }
     }
 }
