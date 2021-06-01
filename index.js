@@ -1,3 +1,4 @@
+require('./ExtendedMessage');
 const { Client, Collection } = require("discord.js");
 const Discord = require("discord.js");
 const { config } = require("dotenv");
@@ -44,32 +45,20 @@ client.on("message", async message => {
 
     if (message.content.startsWith(eng))
     {
-        var embed = new Discord.MessageEmbed()
-                .setDescription("Hi " + sendt.replace(eng,"") + ", I'm dad\n")
-                .setColor("#000000")
-        message.channel.send(embed);
+        message.inlineReply("Hi " + sendt.replace(eng,"") + ", I'm dad\n");
     }
     if (message.content.startsWith(eng1))
     {
-        var embed = new Discord.MessageEmbed()
-            .setDescription("Hi " + sendt.replace(eng1,"") + ", I'm dad\n")
-            .setColor("#000000")
-        message.channel.send(embed);
+        message.inlineReply("Hi " + sendt.replace(eng1,"") + ", I'm dad\n");
     }
 
     if (message.content.startsWith(eng2))
     {
-        var embed = new Discord.MessageEmbed()
-            .setDescription("Hi " + sendt.replace(eng2,"") + ", I'm dad\n")
-            .setColor("#000000")
-        message.channel.send(embed);
+        message.inlineReply("Hi " + sendt.replace(eng2,"") + ", I'm dad\n");
     }
     if (message.content.startsWith(eng3))
     {
-        var embed = new Discord.MessageEmbed()
-            .setDescription("Hi " + sendt.replace(eng3,"") + ", I'm dad\n")
-            .setColor("#000000")
-        message.channel.send(embed);
+        message.inlineReply("Hi " + sendt.replace(eng3,"") + ", I'm dad\n");
     }
     
     /* 
@@ -83,18 +72,12 @@ client.on("message", async message => {
 
     if (message.content.startsWith(fr1))
     {
-        var embed = new Discord.MessageEmbed()
-        .setDescription("Coucou " + sendt.replace(fr1,"") + ", je suis papa\n")
-        .setColor("#000000")
-        message.channel.send(embed);
+        message.inlineReply("Coucou " + sendt.replace(fr1,"") + ", je suis papa\n");
     }
     
     if (message.content.startsWith(fr2))
     {
-        var embed = new Discord.MessageEmbed()
-        .setDescription("Hei " + sendt.replace(fr2,"") + ", je suis papa\n")
-        .setColor("#000000")
-        message.channel.send(embed);
+        message.inlineReply("Hei " + sendt.replace(fr2,"") + ", je suis papa\n");
     }
 
     
@@ -114,49 +97,31 @@ client.on("message", async message => {
 
     if (message.content.startsWith(nor1))
     {
-    var embed = new Discord.MessageEmbed()
-    .setDescription("Heia " + sendt.replace(nor1,"") + ", æ e pappa\n")
-    .setColor("#000000")
-        message.channel.send(embed);
+        message.inlineReply("Heia " + sendt.replace(nor1,"") + ", æ e pappa\n");
     }
     
     if (message.content.startsWith(nor2))
     {
-        var embed = new Discord.MessageEmbed()
-        .setDescription("Hei " + sendt.replace(nor2,"") + ", eg er pappa\n")
-        .setColor("#000000")
-        message.channel.send(embed);
+        message.inlineReply("Hei " + sendt.replace(nor2,"") + ", eg er pappa\n");
     }
     if (message.content.startsWith(nor3))
     {
-        var embed = new Discord.MessageEmbed()
-                .setDescription("Hei " + sendt.replace(nor3,"") + ", jeg er pappa\n")
-                .setColor("#000000")
-        message.channel.send(embed);
+        message.inlineReply("Hei " + sendt.replace(nor3,"") + ", jeg er pappa\n");
     }
     
     if (message.content.startsWith(nor4))
     {
-        var embed = new Discord.MessageEmbed()
-                .setDescription("Heia " + sendt.replace(nor4,"") + ", æ e pappa\n")
-                .setColor("#000000")
-        message.channel.send(embed);
+        message.inlineReply("Heia " + sendt.replace(nor4,"") + ", æ e pappa\n");
     }
     
     if (message.content.startsWith(nor5))
     {
-        var embed = new Discord.MessageEmbed()
-                .setDescription("Hei " + sendt.replace(nor5,"") + ", eg e pappa\n")
-                .setColor("#000000")
-        message.channel.send(embed);
+        message.inlineReply("Hei " + sendt.replace(nor5,"") + ", eg e pappa\n");
     }
     
     if (message.content.startsWith(nor6))
     {
-        var embed = new Discord.MessageEmbed()
-                .setDescription("Hei " + sendt.replace(nor6,"") + ", jeg er pappa\n")
-                .setColor("#000000")
-        message.channel.send(embed);
+        message.inlineReply("Hei " + sendt.replace(nor6,"") + ", jeg er pappa\n");
     }
     
     /* 
@@ -169,17 +134,11 @@ client.on("message", async message => {
 
     if (message.content.startsWith(du))
     {
-        var embed = new Discord.MessageEmbed()
-                .setDescription("Hallo  " + sendt.replace(du,"") + ", ik ben papa\n")
-                .setColor("#000000")
-        message.channel.send(embed);
+        message.inlineReply("Hallo  " + sendt.replace(du,"") + ", ik ben papa\n");
     }
     if (message.content.startsWith(nor6))
     {
-        var embed = new Discord.MessageEmbed()
-                .setDescription("Hallootjes  " + sendt.replace(du,"") + ", ik ben papa\n")
-                .setColor("#000000")
-        message.channel.send(embed);
+        message.inlineReply("Hallootjes  " + sendt.replace(du,"") + ", ik ben papa\n");
     }
     /* 
     * -----------------------------------------------------
