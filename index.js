@@ -145,8 +145,8 @@ client.on("message", async message => {
     * --------------------- Spanish -----------------------
     * -----------------------------------------------------
     */
-    let es  = estoy;
-    let es1 = Estoy;
+    let es  = "estoy";
+    let es1 = "Estoy";
 
     if (message.content.startsWith(es))
     {
