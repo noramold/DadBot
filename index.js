@@ -136,7 +136,7 @@ client.on("message", async message => {
     {
         message.inlineReply("Hallo " + sendt.replace(du,"") + ", ik ben papa\n");
     }
-    if (message.content.startsWith(du1)
+    if (message.content.startsWith(du1))
     {
         message.inlineReply("Hallootjes " + sendt.replace(du1,"") + ", ik ben papa\n");
     }
