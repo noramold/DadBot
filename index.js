@@ -33,6 +33,7 @@ client.on("message", async message => {
     
     let sendt = message.content;
 
+    /* IMPORT DICTONARIES  */ 
     /* 
     * -----------------------------------------------------
     * ------------------- English -------------------------
@@ -77,7 +78,7 @@ client.on("message", async message => {
     
     if (message.content.startsWith(fr2))
     {
-        message.inlineReply("Hei " + sendt.replace(fr2,"") + ", je suis papa\n");
+        message.inlineReply("Salut " + sendt.replace(fr2,"") + ", je suis papa\n");
     }
 
     
@@ -155,6 +156,36 @@ client.on("message", async message => {
     if (message.content.startsWith(es1))
     {
         message.inlineReply("Hola " + sendt.replace(es1,"") + ", yo soy papá\n");
+    }
+
+
+
+    /* 
+    * -----------------------------------------------------
+    * ------------------- German --------------------------
+    * -----------------------------------------------------
+    */
+    
+    let gr1 = "ich bin";
+    let gr2 = "Ich bin";
+    let gr3 = "Ich werde";
+    let gr4 = "ich werde";
+
+    if (message.content.startsWith(gr1))
+    {
+        message.inlineReply("Hallo " + sendt.replace(es,"") + ", ich bin pappa\n");
+    }
+    if (message.content.startsWith(gr2))
+    {
+        message.inlineReply("Gutentag  " + sendt.replace(es1,"") + ", ich bin pappa\n");
+    }
+    if (message.content.startsWith(gr1))
+    {
+        message.inlineReply("Gutentag " + sendt.replace(es,"") + ", ich bin pappa\n");
+    }
+    if (message.content.startsWith(es1))
+    {
+        message.inlineReply("Hallo  " + sendt.replace(es1,"") + ", ich bin pappa\n");
     }
 
     /* 
