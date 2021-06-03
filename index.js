@@ -173,19 +173,19 @@ client.on("message", async message => {
 
     if (message.content.startsWith(gr1))
     {
-        message.inlineReply("Hallo " + sendt.replace(es,"") + ", ich bin pappa\n");
+        message.inlineReply("Hallo " + sendt.replace(gr1,"") + ", ich bin pappa\n");
     }
     if (message.content.startsWith(gr2))
     {
-        message.inlineReply("Gutentag  " + sendt.replace(es1,"") + ", ich bin pappa\n");
+        message.inlineReply("Gutentag  " + sendt.replace(gr2,"") + ", ich bin pappa\n");
     }
-    if (message.content.startsWith(gr1))
+    if (message.content.startsWith(gr3))
     {
-        message.inlineReply("Gutentag " + sendt.replace(es,"") + ", ich bin pappa\n");
+        message.inlineReply("Gutentag " + sendt.replace(gr3,"") + ", ich bin pappa\n");
     }
-    if (message.content.startsWith(es1))
+    if (message.content.startsWith(gr4))
     {
-        message.inlineReply("Hallo  " + sendt.replace(es1,"") + ", ich bin pappa\n");
+        message.inlineReply("Hallo  " + sendt.replace(gr4,"") + ", ich bin pappa\n");
     }
 
     /* 
