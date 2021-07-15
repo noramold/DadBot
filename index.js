@@ -31,197 +31,128 @@ client.on("message", async message => {
     if (message.author.bot) return;
     if (!message.guild) return;
     
-    let sendt = message.content;
-
-    /* IMPORT DICTONARIES  */ 
-    /* 
-    * -----------------------------------------------------
-    * ------------------- English -------------------------
-    * -----------------------------------------------------
-    */
-    let eng = "I'm";
-    let eng1 = "i'm";
-    let eng2 = "i am";
-    let eng3 = "I am";
-
-    if (message.content.startsWith(eng))
-    {
-        message.inlineReply("Hi " + sendt.replace(eng,"") + ", I'm dad\n");
-    }
-    if (message.content.startsWith(eng1))
-    {
-        message.inlineReply("Hi " + sendt.replace(eng1,"") + ", I'm dad\n");
-    }
-
-    if (message.content.startsWith(eng2))
-    {
-        message.inlineReply("Hi " + sendt.replace(eng2,"") + ", I'm dad\n");
-    }
-    if (message.content.startsWith(eng3))
-    {
-        message.inlineReply("Hi " + sendt.replace(eng3,"") + ", I'm dad\n");
-    }
+    let sendt = message.content.toLowerCase();
     
-    /* 
-    * -----------------------------------------------------
-     * ------------------- French --------------------------
-     * -----------------------------------------------------
-     */
-    
-    let fr1 = "je suis"
-    let fr2 = "Je suis"
+    for(var i = 0; i < search.length; i++)
+    {
+            // console.log(search[i]);
+            // console.log(sendt);
+        
+            // for(var j = 0; j < search[i].lang.length; j ++)
+            // {
+            //     let lang = search[i].lang[j];
+            //     if(sendt.startsWith(lang)) // || sendt.endsWith(search[1].lang))
+            //     {            
+            //         console.log("WELP");
+            //         message.inlineReply("Huh what the fuck" + "\n");
+            //     }
+            // }
 
-    if (message.content.startsWith(fr1))
-    {
-        message.inlineReply("Coucou " + sendt.replace(fr1,"") + ", je suis papa\n");
+            if(sendt.startsWith(search[i].lang)) // || sendt.endsWith(search[1].lang))
+            {
+                let word = sendt.replace(search[i].lang,"");
+                let greets = search[i].greeting;
+                let hi_dad = search[i].dad;
+                
+                /* Making sure arabic is the right way */
+                // if(search[i].lang === أَنَا)
+                // {
+                    //     message.inlineReply(hi_dad + "," + word + greets + "\n");
+                    // }
+                    
+                    message.inlineReply(greets + word + ", " + hi_dad + "\n");
+            }
     }
-    
-    if (message.content.startsWith(fr2))
-    {
-        message.inlineReply("Salut " + sendt.replace(fr2,"") + ", je suis papa\n");
-    }
-
-    
-    /* 
-    * -----------------------------------------------------
-    * ------------------ Norwegian ------------------------
-    * -----------------------------------------------------
-    */
-
-    
-    let nor1 = "æ e ";
-    let nor2 = "eg e";
-    let nor3 = "jeg er";
-    let nor4 = "Æ e";
-    let nor5 = "Eg e";
-    let nor6 = "Jeg er";
-
-    if (message.content.startsWith(nor1))
-    {
-        message.inlineReply("Heia " + sendt.replace(nor1,"") + ", æ e pappa\n");
-    }
-    
-    if (message.content.startsWith(nor2))
-    {
-        message.inlineReply("Hei " + sendt.replace(nor2,"") + ", eg er pappa\n");
-    }
-    if (message.content.startsWith(nor3))
-    {
-        message.inlineReply("Hei " + sendt.replace(nor3,"") + ", jeg er pappa\n");
-    }
-    
-    if (message.content.startsWith(nor4))
-    {
-        message.inlineReply("Heia " + sendt.replace(nor4,"") + ", æ e pappa\n");
-    }
-    
-    if (message.content.startsWith(nor5))
-    {
-        message.inlineReply("Hei " + sendt.replace(nor5,"") + ", eg e pappa\n");
-    }
-    
-    if (message.content.startsWith(nor6))
-    {
-        message.inlineReply("Hei " + sendt.replace(nor6,"") + ", jeg er pappa\n");
-    }
-    
-    /* 
-    * -----------------------------------------------------
-    * --------------------- Dutch -------------------------
-    * -----------------------------------------------------
-    */
-    let du  = "ik ben";
-    let du1 = "Ik ben";
-
-    if (message.content.startsWith(du))
-    {
-        message.inlineReply("Hallo " + sendt.replace(du,"") + ", ik ben papa\n");
-    }
-    if (message.content.startsWith(du1))
-    {
-        message.inlineReply("Hallootjes " + sendt.replace(du1,"") + ", ik ben papa\n");
-    }
-    /* 
-    * -----------------------------------------------------
-    * --------------------- Spanish -----------------------
-    * -----------------------------------------------------
-    */
-    let es  = "estoy";
-    let es1 = "Estoy";
-
-    if (message.content.startsWith(es))
-    {
-        message.inlineReply("Hola " + sendt.replace(es,"") + ", yo soy papá \n");
-    }
-    if (message.content.startsWith(es1))
-    {
-        message.inlineReply("Hola " + sendt.replace(es1,"") + ", yo soy papá\n");
-    }
-
-
-
-    /* 
-    * -----------------------------------------------------
-    * ------------------- German --------------------------
-    * -----------------------------------------------------
-    */
-    
-    let gr1 = "ich bin";
-    let gr2 = "Ich bin";
-    let gr3 = "Ich werde";
-    let gr4 = "ich werde";
-
-    if (message.content.startsWith(gr1))
-    {
-        message.inlineReply("Hallo " + sendt.replace(gr1,"") + ", ich bin pappa\n");
-    }
-    if (message.content.startsWith(gr2))
-    {
-        message.inlineReply("Gutentag  " + sendt.replace(gr2,"") + ", ich bin pappa\n");
-    }
-    if (message.content.startsWith(gr3))
-    {
-        message.inlineReply("Gutentag " + sendt.replace(gr3,"") + ", ich bin pappa\n");
-    }
-    if (message.content.startsWith(gr4))
-    {
-        message.inlineReply("Hallo  " + sendt.replace(gr4,"") + ", ich bin pappa\n");
-    }
-
-    /* 
-    * -----------------------------------------------------
-    * -----------------------------------------------------
-    * -----------------------------------------------------
-    */
-
-    
-
-     // if (message.author.bot) return;
-    // if (!message.guild) return;
-    if (!message.content.toLocaleLowerCase().startsWith(prefix)) return;
-    
-    // If message.member is uncached, cache it.
-    if (!message.member) message.member = await message.guild.fetchMember(message);
-
-    const args = message.content.slice(prefix.length).trim().split(/ +/g);
-    const cmd = args.shift().toLowerCase();
-    
-    if (cmd.length === 0) return;
-    let mention = message.mentions.users.first();
-    
-
-    // Get the command
-    let command = client.commands.get(cmd);
-    var count = 0;
-    var incr = 0;
-    if (command) 
-    {
-        command.run(client, message, args,mention);
-    }
-
-    
 
     
 });
 
 client.login(process.env.BOT_TOKEN);
+
+var search = [
+    {
+        lang: "ek is", // Afrikaans
+        greeting: "Hallo", 
+        dad: "ek is pa"
+    }, 
+    // {
+    //     lang: "أَنَا", // Arabic
+    //     greeting: "مرحبا", 
+    //     dad: "أَنَا بابا", 
+    // },
+    {
+        lang: "我是", // Chinese
+        greeting: "你好", 
+        dad: "我是爸爸", 
+    },
+    {
+        lang: "jeg er", // Danish 
+        greeting: "Hallo", 
+        dad: "jeg er pappa", 
+    },
+    {
+        lang: "ik ben", // Dutch
+        greeting: "Hallo", 
+        dad: "ik ben papa", 
+    },
+    {
+        lang: "mi estas", // Esperanto
+        greeting: "Saluton", 
+        dad: "mi estas paĉjo", 
+    },
+    {
+        lang: "i am", // English
+        greeting: "Hello", 
+        dad: "i'm dad", 
+    },
+    {
+        lang: "i'm", // English
+        greeting: "Hi", 
+        dad: "i'm dad", 
+    },
+    {
+        lang: "je suis", // French 
+        greeting: "Salut", 
+        dad: "je suis papa", 
+    },
+    {
+        lang: "ich bin", // German
+        greeting: "Hallo", 
+        dad: "ich bin papa", 
+    },
+    {
+        lang: "eia au",  // Hawaiian
+        greeting: "Aloha", 
+        dad: "ʻO wau ka makuakāne", 
+    },
+    {
+        lang: "ég er", // Iclandic
+        greeting: "Halló", 
+        dad: "ég er pabbi", 
+    },
+    {
+        lang:  "jeg er", // ["jeg er","eg er","æ e","æg e"], // Norwegian
+        greeting: "Hei", 
+        dad: "jeg er pappa", 
+    },
+    {
+        lang: "jestem", // Polish
+        greeting: "Cześć", 
+        dad: "jestem tatą", 
+    },
+    {
+        lang: "aniga", // Somali
+        greeting: "As-Salam Alaykum", 
+        dad: "aniga waxaan ahay aabo", 
+    },
+    {
+        lang: "yo soy", //Spanish
+        greeting: "Hola", 
+        dad: "yo soy papa", 
+    },
+    {
+        lang: "jag är", // Swedish
+        greeting: "Hallo", 
+        dad: "jag är pappa"
+    }
+];
