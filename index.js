@@ -154,5 +154,12 @@ var search = [
         lang: "jag är", // Swedish
         greeting: "Hallo", 
         dad: "jag är pappa"
+    }, 
+
+    /* LAME THING */
+    {
+        lang: "I'm dad", // dad thing, 
+        greeting: "No",
+        dad: "I'm dad"
     }
 ];
