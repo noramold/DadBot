@@ -53,14 +53,21 @@ client.on("message", async message => {
                 let word = sendt.replace(search[i].lang,"");
                 let greets = search[i].greeting;
                 let hi_dad = search[i].dad;
+
+                let hi = sendt.replace("i'm","");
+                let hi1 = sendt.replace("i am", "")
                 
+                if(hi === " dad" || hi1 === " dad")
+                    message.inlineReply("No, I'm dad\n");
+                else
+                    message.inlineReply(greets + word + ", " + hi_dad + "\n");
+
                 /* Making sure arabic is the right way */
                 // if(search[i].lang === أَنَا)
                 // {
                     //     message.inlineReply(hi_dad + "," + word + greets + "\n");
                     // }
                     
-                    message.inlineReply(greets + word + ", " + hi_dad + "\n");
             }
     }
 
@@ -157,9 +164,9 @@ var search = [
     }, 
 
     /* LAME THING */
-    {
-        lang: "i'm dad", // dad thing, 
-        greeting: "No",
-        dad: "i'm dad"
-    }
+    // {
+    //     lang: "i'm dad", // dad thing, 
+    //     greeting: "No",
+    //     dad: "i'm dad"
+    // }
 ];
