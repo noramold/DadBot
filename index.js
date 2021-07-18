@@ -158,8 +158,8 @@ var search = [
 
     /* LAME THING */
     {
-        lang: "I'm dad", // dad thing, 
+        lang: "i'm dad", // dad thing, 
         greeting: "No",
-        dad: "I'm dad"
+        dad: "i'm dad"
     }
 ];
