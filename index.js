@@ -55,18 +55,10 @@ client.on("message", async message => {
                 let hi_dad  = search[i].dad; // I'm dad reply 
                 let no_i_am = search[i].not; // No in different languages
                 
-
-                // let hi = sendt.replace("i'm","");
-                // let hi1 = sendt.replace("i am", "")
-                
-                console.log(sendt);
-                console.log(hi_dad + "hi dad");
                 if(sendt === hi_dad)
                 {
-                    console.log("TEEST!!")
                     message.inlineReply(no_i_am + ", " + hi_dad + "\n");
                 }
-                    // message.inlineReply(me + "," + hi_dad + "\n");
                 else
                     message.inlineReply(greets + word + ", " + hi_dad + "\n");
 
