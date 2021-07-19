@@ -97,10 +97,10 @@ var search = [
         not: "不"
     },
     {
-        lang: "jeg er", // Danish 
+        lang: "jeg er", // Danish & Norwegian
         greeting: "Hallo", 
         dad: "jeg er pappa", 
-        not: "Mei"
+        not: "Nei"
     },
     {
         lang: "ik ben", // Dutch
@@ -127,6 +127,12 @@ var search = [
         not: "No"
     },
     {
+        lang: "i’m", // English
+        greeting: "Hi", 
+        dad: "i’m dad", 
+        not: "No"
+    },
+    {
         lang: "je suis", // French 
         greeting: "Salut", 
         dad: "je suis papa", 
@@ -150,12 +156,12 @@ var search = [
         dad: "ég er pabbi", 
         not: "Nei"
     },
-    {
-        lang:  "jeg er", // ["jeg er","eg er","æ e","æg e"], // Norwegian
-        greeting: "Hei", 
-        dad: "jeg er pappa", 
-        not: "Nei"
-    },
+    // {
+    //     lang:  "jeg er", // ["jeg er","eg er","æ e","æg e"], // Norwegian
+    //     greeting: "Hei", 
+    //     dad: "jeg er pappa", 
+    //     not: "Nei"
+    // },
     {
         lang: "jestem", // Polish
         greeting: "Cześć", 
