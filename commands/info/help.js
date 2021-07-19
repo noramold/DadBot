@@ -9,21 +9,19 @@ module.exports =
     description: 'all the commands',
     run: async(client,message,args) =>
     {
-        var embed = new Discord.MessageEmbed()
-            .setTitle("Commands")
-            .setAuthor("Dad Bot")
-            .setDescription(help)
-            .setThumbnail("https://c8.alamy.com/comp/PHG588/look-at-me-i-am-cool-dad-portrait-of-handsome-adult-bearded-male-in-trendy-sunglasses-and-denim-jacket-pointing-at-himself-and-smiling-broadly-introducing-to-people-on-disco-party-over-grey-wall-PHG588.jpg")
-            .setColor("#414084")
-        message.channel.send(embed);
+        message.channel.send(help);
     }
 }
-const help = 
-`
-•***${prefix}dadjoke *new/top/hot*** top dadjokes from reddit
-•***${prefix}dadtext*** random dadjokes
-`
 
+const help = new Discord.MessageEmbed()
+    .setTitle('Dadbot commands')
+    .setThumbnail("https://c8.alamy.com/comp/PHG588/look-at-me-i-am-cool-dad-portrait-of-handsome-adult-bearded-male-in-trendy-sunglasses-and-denim-jacket-pointing-at-himself-and-smiling-broadly-introducing-to-people-on-disco-party-over-grey-wall-PHG588.jpg")
+
+    //.setDescription('My prefix is: ' + `${prefix}`)
+    .addFields(
+        { name: 'Reddit dadjokes 🤭    ', value:  '`' + `${prefix}` + 'dadjoke' + '`', inline: true},
+        { name: 'Random dadjokes 😎',  value: '`' + `${prefix}` + 'dad' + '`', inline: true},
+    )
 //asd
 // •***${prefix}gif word*** for random gifs with connetion to a word. e.g *cool*
 // •*${prefix} memes* for the wilds memes
@@ -32,4 +30,3 @@ const help =
 
 
 
-// module.exports = help

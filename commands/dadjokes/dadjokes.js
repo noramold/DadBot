@@ -10,75 +10,76 @@ module.exports =
         var count = 0;
         // var embed = new Discord.MessageEmbed()
 
-        if(args[0].toLowerCase() == "new")
-        {
+        // if(args[0] == "new")
+        // {
             
-            redditFetch({
+            // redditFetch({
 
-                subreddit: 'dadjokes',
-                sort: 'new', 
-                allowNSFW: false,
-                allowModPost: true, 
-                allowCrossPost: true, 
+            //     subreddit: 'dadjokes',
+            //     sort: 'new', 
+            //     allowNSFW: false,
+            //     allowModPost: true, 
+            //     allowCrossPost: true, 
             
-            }).then(post => {
-                // var embed = new Discord.MessageEmbed()
-                // .setURL(`${post.url}`)
-                // .setDescription("A meme for you")
-                message.channel.send(`${post.url}`);
-            });
+            // }).then(post => {
+            //     // var embed = new Discord.MessageEmbed()
+            //     // .setURL(`${post.url}`)
+            //     // .setDescription("A meme for you")
+            //     message.channel.send(`${post.url}`);
+            // });
 
-            count++;
-        }
-        if(args[0].toLowerCase() == "hot")
-        {
+        //     count++;
+        // }
+        // if(args[0] == "hot")
+        // {
             
-            redditFetch({
+        redditFetch({
 
-                subreddit: 'dadjokes',
-                sort: 'hot', 
-                allowNSFW: false,
-                allowModPost: true, 
-                allowCrossPost: true, 
+            subreddit: 'dadjokes',
+            sort: 'hot', 
+            allowNSFW: false,
+            allowModPost: true, 
+            allowCrossPost: true, 
+            // showDescription: true
             
-            }).then(post => {
-                // var embed = new Discord.MessageEmbed()
-                // .setURL(`${post.url}`)
-                // .setDescription("A meme for you")
-                message.channel.send(`${post.url}`);
-            });
-            count++;
+        }).then(post => {
+            // var embed = new Discord.MessageEmbed()
+            // .setURL(`${post.url}`)
+            // .setDescription("A meme for you")
+            message.channel.send("A dad joke for you my child!" + "\n" + `${post.url}`);// + `${post.description}`);
+        });
+        // count++;
 
-        }
-        if(args[0].toLowerCase() == "top")
-        {
+        // }
+        // if(args[0] == "top")
+        // {
             
-            redditFetch({
+        //     redditFetch({
 
-                subreddit: 'dadjokes',
-                sort: 'top', 
-                allowNSFW: false,
-                allowModPost: true, 
-                allowCrossPost: true, 
+        //         subreddit: 'dadjokes',
+        //         sort: 'top', 
+        //         allowNSFW: false,
+        //         allowModPost: true, 
+        //         allowCrossPost: true, 
             
-            }).then(post => {
-                // var embed = new Discord.MessageEmbed()
-                // .setURL(`${post.url}`)
-                // .setDescription("A meme for you")
-                message.channel.send(`${post.url}`);
-            });
-            count++;
-        }
+        //     }).then(post => {
+        //         // var embed = new Discord.MessageEmbed()
+        //         // .setURL(`${post.url}`)
+        //         // .setDescription("A meme for you")
+        //         message.channel.send(`${post.url}`);
+        //     });
+        //     count++;
+        // }
         
-        if(args[0].toLowerCase === "stats")
-        {
+        // if(args[0].toLowerCase === "stats")
+        // {
 
-            console.log("wtf");
-            var embed = new Discord.MessageEmbed()
-            // .setDescription("Bot has been used " + count + "times")
-            .setDescription("I work")
-            .setColor("#000000")
-            message.channel.send(embed);
-        }
+        //     console.log("wtf");
+        //     var embed = new Discord.MessageEmbed()
+        //     // .setDescription("Bot has been used " + count + "times")
+        //     .setDescription("I work")
+        //     .setColor("#000000")
+        //     message.channel.send(embed);
+        // }
     }
 }
