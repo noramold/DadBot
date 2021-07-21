@@ -225,6 +225,12 @@ var search = [
         greeting: "Hallo", 
         dad: ["jag är pappa"], 
         not: "Nej"
+    }, 
+    {
+        lang: ["watashi"], 
+        greeting: "Kon'nichiwa", 
+        dad: ["watashi wa otōsandesu"], 
+        not: "Nai"
     }
     /* LAME THING */
     // {
