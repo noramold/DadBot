@@ -229,7 +229,7 @@ var search = [
     {
         lang: ["watashi"], 
         greeting: "Kon'nichiwa", 
-        dad: ["watashi wa otousan"], 
+        dad: ["watashi wa otousan desu"], 
         not: "Nai"
     }
     /* LAME THING */
