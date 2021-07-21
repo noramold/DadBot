@@ -197,9 +197,9 @@ var search = [
         not: "Nei"
     },
     {
-        lang: ["eg er","æ e","æg e"], // Norwegian
+        lang: ["eg er","æ e","æg e", "eg e"], // Norwegian
         greeting: "Hei", 
-        dad: ["eg er pappa", "æ e pappa", "æg e pappa"], 
+        dad: ["eg er pappa", "æ e pappa", "æg e pappa", "eg e pappa"], 
         not: "Nei"
     },
     {
