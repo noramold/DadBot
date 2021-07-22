@@ -3,7 +3,7 @@ const Discord  = require('discord.js');
 
 module.exports = 
 {
-    name: 'dad',
+    name: 'joke',
     category: 'dadjokes',
     description: 'dad jokes text ',
     run: async(client,message,args) =>
@@ -26,7 +26,7 @@ var words =
     "pappa", 
     "father", 
     "pa", 
-    "pére"
+    "pére", 
 ]
 var dad = [
 "'Dad, did you get a haircut?' 'No, I got them all cut!'",      

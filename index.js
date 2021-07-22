@@ -51,7 +51,8 @@ client.on("message", async message => {
             //         message.inlineReply("Huh what the fuck" + "\n");
             //     }
             // }
-            let word    = sendt.replace(search[i].lang[j],""); // What people sent with out I'm
+            let word    = sendt.replace(search[i].lang[j], ""); // What people sent with out I'm
+            // word = word.replace(exclamations, "");// på indeks etc
             let hi_dad  = search[i].dad[j]; // I'm dad reply 
             let greets  = search[i].greeting; // Greeting e.g Hello
             let no_i_am = search[i].not; // No in different languages
@@ -109,6 +110,9 @@ client.on("message", async message => {
 
     
 });
+
+var exclamations = [".", "!", ",", "?"]
+
 
 client.login(process.env.BOT_TOKEN);
 

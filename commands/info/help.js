@@ -19,8 +19,8 @@ const help = new Discord.MessageEmbed()
 
     //.setDescription('My prefix is: ' + `${prefix}`)
     .addFields(
-        { name: 'Reddit dadjokes 🤭    ', value:  '`' + `${prefix}` + 'dadjoke' + '`', inline: true},
-        { name: 'Random dadjokes 😎',  value: '`' + `${prefix}` + 'dad' + '`', inline: true},
+        { name: 'Reddit dadjokes 🤭    ', value:  '`' + `${prefix}` + 'reddit' + '`', inline: true},
+        { name: 'Random dadjokes 😎',  value: '`' + `${prefix}` + 'joke' + '`', inline: true},
     )
 //asd
 // •***${prefix}gif word*** for random gifs with connetion to a word. e.g *cool*

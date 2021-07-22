@@ -2,7 +2,7 @@ const Discord  = require('discord.js');
 const redditFetch = require('reddit-fetch')
 module.exports = 
 {
-    name: 'dadjoke',
+    name: 'reddit',
     category: 'pics',
     description: 'memes basically',
     run: async(client,message,args) =>
@@ -40,13 +40,14 @@ module.exports =
             allowNSFW: false,
             allowModPost: true, 
             allowCrossPost: true, 
+            allowVideo: false
             // showDescription: true
             
         }).then(post => {
             // var embed = new Discord.MessageEmbed()
             // .setURL(`${post.url}`)
             // .setDescription("A meme for you")
-            message.channel.send("A dad joke for you my child!" + "\n" + `${post.url}`);// + `${post.description}`);
+            message.channel.send("A dad joke for you my child!" + "\n" + post.d`${post.url}` + `${post.}`); // + `${post.description}`);
         });
         // count++;
 
