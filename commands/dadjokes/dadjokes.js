@@ -47,7 +47,7 @@ module.exports =
             // var embed = new Discord.MessageEmbed()
             // .setURL(`${post.url}`)
             // .setDescription("A meme for you")
-            message.channel.send("A dad joke for you my child!" + "\n" + post.d`${post.url}`); // + `${post.description}`);
+            message.channel.send("A dad joke for you my child!" + "\n" + `${post.url}`); // + `${post.description}`);
         });
         // count++;
 
